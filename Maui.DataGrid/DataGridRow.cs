@@ -151,7 +151,7 @@ internal sealed class DataGridRow : Grid
 
     private void DataGrid_ItemSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (DataGrid.SelectionEnabled && (e.CurrentSelection[^1] == RowContext || _hasSelected))
+        if (DataGrid.SelectionEnabled)
         {
             UpdateBackgroundColor();
         }
